@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-
 <html class="dark" lang="nl"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Hatay Döner Kebab Digital Menu</title>
+<title>Updated Hatay Döner Kebab Menu</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -21,12 +19,12 @@
                     fontFamily: {
                         "display": ["Work Sans", "sans-serif"]
                     },
-                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
                 },
             },
         }
     </script>
-<style>
+<style type="text/tailwindcss">
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
@@ -44,14 +42,12 @@
 </head>
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white min-h-screen">
 <div class="layout-container flex h-full grow flex-col items-center">
-<!-- Main Content Container (Mobile width on Desktop) -->
 <div class="w-full max-w-[640px] flex flex-col min-h-screen shadow-2xl bg-white dark:bg-[#1a170d]">
-<!-- Sticky Header -->
 <header class="sticky top-0 z-50 bg-white/95 dark:bg-[#1a170d]/95 backdrop-blur-sm border-b border-primary/20">
 <div class="flex flex-col px-6 py-4 gap-3">
 <div class="flex items-center justify-between">
 <div class="flex flex-col">
-<h1 class="text-xl font-bold tracking-tight text-primary">HATAY DÖNER KEBAB</h1>
+<h1 class="text-xl font-bold tracking-tight text-primary uppercase">Hatay Döner Kebab</h1>
 <p class="text-xs font-medium text-slate-500 dark:text-slate-400">GENT • BELGIUM • 12:00–00:00</p>
 </div>
 <a class="p-2 rounded-full bg-green-500/10 text-green-500 hover:bg-green-500/20 transition-colors" href="https://wa.me/32487214401" target="_blank">
@@ -69,128 +65,118 @@
 </a>
 </div>
 </div>
-<!-- Horizontal Chips Navigation -->
 <div class="flex gap-2 px-6 pb-4 overflow-x-auto hide-scrollbar">
+<a class="whitespace-nowrap px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold border border-primary/20" href="#hatay-durum">HATAY DÜRÜM</a>
 <a class="whitespace-nowrap px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold border border-primary/20" href="#durum">DÜRÜM</a>
-<a class="whitespace-nowrap px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold border border-primary/20" href="#brood">BROOD</a>
-<a class="whitespace-nowrap px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold border border-primary/20" href="#schotel">SCHOTEL</a>
+<a class="whitespace-nowrap px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold border border-primary/20" href="#pitta">PITTA</a>
+<a class="whitespace-nowrap px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold border border-primary/20" href="#schotels">SCHOTELS</a>
 <a class="whitespace-nowrap px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold border border-primary/20" href="#kapsalon">KAPSALON</a>
-<a class="whitespace-nowrap px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold border border-primary/20" href="#vegetarisch">VEGGIE</a>
 </div>
 </header>
-<!-- Hero Image -->
 <div class="relative w-full aspect-[21/9] overflow-hidden">
 <div class="absolute inset-0 bg-gradient-to-t from-background-dark to-transparent z-10"></div>
-<div class="w-full h-full bg-cover bg-center" data-alt="Authentic Hatay kebab on a grill with fresh vegetables" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBx39iS-8s32GM9dXwJ3yCmS83FNn4JDbEL-knFeGa71LmD2GU2D1UfbAIBYoOoZi_st4HRzfF7OJ6Dgkyb8gne0d3CnFxZ5OqpODtR89bDkgdKkwfpUsrxsNXkL4D2xHtT_oz_-srlhDQzGlLR5bRrSnYOkAah2vM4dNXIv_MLOIuX0DPNc5Tro31O2q-YYxX89F98QHzr_HPpGXq-UXXwSnmBrvvxACKQllPdNjL5_ljY4G22h4-jRH6oF6HueXQw122wBpAPWLu5");'></div>
+<div class="w-full h-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBx39iS-8s32GM9dXwJ3yCmS83FNn4JDbEL-knFeGa71LmD2GU2D1UfbAIBYoOoZi_st4HRzfF7OJ6Dgkyb8gne0d3CnFxZ5OqpODtR89bDkgdKkwfpUsrxsNXkL4D2xHtT_oz_-srlhDQzGlLR5bRrSnYOkAah2vM4dNXIv_MLOIuX0DPNc5Tro31O2q-YYxX89F98QHzr_HPpGXq-UXXwSnmBrvvxACKQllPdNjL5_ljY4G22h4-jRH6oF6HueXQw122wBpAPWLu5");'></div>
 </div>
-<!-- Menu Content -->
 <main class="flex flex-col px-4 py-6 gap-8 pb-20">
-<!-- Category: DÜRÜM -->
-<section class="flex flex-col" id="durum">
-<h2 class="text-xl font-bold px-2 mb-4 border-l-4 border-primary flex items-center gap-2">
-                        DÜRÜM
-                        <span class="text-xs font-medium text-slate-400">/ DÜRÜM</span>
-</h2>
+<section class="flex flex-col" id="hatay-durum">
+<h2 class="text-xl font-bold px-2 mb-4 border-l-4 border-primary flex items-center gap-2 uppercase">
+                        Hatay Dürüm
+                    </h2>
 <div class="flex flex-col gap-1 bg-white dark:bg-[#2a2516] rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800">
-<div class="flex justify-between items-center p-4 border-b border-slate-100 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800/50">
-<div class="flex flex-col">
-<span class="font-semibold">Hatay Dürüm Kip</span>
-<span class="text-xs text-slate-500 italic">Hatay Dürüm Tavuk</span>
-</div>
-<span class="font-bold text-primary">€10</span>
-</div>
-<div class="flex justify-between items-center p-4 border-b border-slate-100 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800/50">
-<div class="flex flex-col">
-<span class="font-semibold">Hatay Dürüm Vlees</span>
-<span class="text-xs text-slate-500 italic">Hatay Dürüm Et</span>
-</div>
-<span class="font-bold text-primary">€11</span>
-</div>
-<div class="flex justify-between items-center p-4 border-b border-slate-100 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800/50">
-<div class="flex flex-col">
-<span class="font-semibold">Dürüm Kip</span>
-<span class="text-xs text-slate-500 italic">Tavuk Dürüm</span>
-</div>
-<span class="font-bold text-primary">€9</span>
-</div>
-<div class="flex justify-between items-center p-4 hover:bg-slate-50 dark:hover:bg-slate-800/50">
-<div class="flex flex-col">
-<span class="font-semibold">Dürüm Vlees</span>
-<span class="text-xs text-slate-500 italic">Et Dürüm</span>
-</div>
-<span class="font-bold text-primary">€10</span>
-</div>
-</div>
-</section>
-<!-- Category: BROOD / EKMEK -->
-<section class="flex flex-col" id="brood">
-<h2 class="text-xl font-bold px-2 mb-4 border-l-4 border-primary flex items-center gap-2">
-                        BROOD
-                        <span class="text-xs font-medium text-slate-400">/ EKMEK</span>
-</h2>
-<div class="flex flex-col gap-1 bg-white dark:bg-[#2a2516] rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800">
-<div class="flex justify-between items-center p-4 border-b border-slate-100 dark:border-slate-800">
-<div class="flex flex-col">
-<span class="font-semibold">Kebab Kip</span>
-<span class="text-xs text-slate-500 italic">Tavuk Döner</span>
-</div>
-<span class="font-bold text-primary">€9</span>
-</div>
-<div class="flex justify-between items-center p-4">
-<div class="flex flex-col">
-<span class="font-semibold">Kebab Vlees</span>
-<span class="text-xs text-slate-500 italic">Et Döner</span>
-</div>
-<span class="font-bold text-primary">€10</span>
-</div>
-</div>
-</section>
-<!-- Category: SCHOTEL / TABAK -->
-<section class="flex flex-col" id="schotel">
-<h2 class="text-xl font-bold px-2 mb-4 border-l-4 border-primary flex items-center gap-2">
-                        SCHOTEL
-                        <span class="text-xs font-medium text-slate-400">/ TABAK</span>
-</h2>
-<div class="flex flex-col gap-1 bg-white dark:bg-[#2a2516] rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800">
-<div class="flex justify-between items-center p-4 border-b border-slate-100 dark:border-slate-800">
-<div class="flex flex-col">
-<span class="font-semibold text-primary">Iskender</span>
-<span class="text-xs text-slate-500 italic">İskender</span>
-</div>
-<span class="font-bold text-primary">€20</span>
-</div>
 <div class="flex justify-between items-center p-4 border-b border-slate-100 dark:border-slate-800">
 <div class="flex flex-col"><span class="font-semibold">Kip</span><span class="text-xs text-slate-500 italic">Tavuk</span></div>
-<span class="font-bold text-primary">€14</span>
+<span class="font-bold text-primary">€10</span>
 </div>
 <div class="flex justify-between items-center p-4 border-b border-slate-100 dark:border-slate-800">
 <div class="flex flex-col"><span class="font-semibold">Vlees</span><span class="text-xs text-slate-500 italic">Et</span></div>
+<span class="font-bold text-primary">€11</span>
+</div>
+<div class="flex justify-between items-center p-4 border-b border-slate-100 dark:border-slate-800">
+<div class="flex flex-col"><span class="font-semibold">Mix</span><span class="text-xs text-slate-500 italic">Karışık</span></div>
+<span class="font-bold text-primary">€11</span>
+</div>
+<div class="flex justify-between items-center p-4 border-b border-slate-100 dark:border-slate-800">
+<div class="flex flex-col"><span class="font-semibold">Zurna Kip</span><span class="text-xs text-slate-500 italic">Zurna Tavuk</span></div>
+<span class="font-bold text-primary">€13</span>
+</div>
+<div class="flex justify-between items-center p-4 border-b border-slate-100 dark:border-slate-800">
+<div class="flex flex-col"><span class="font-semibold">Zurna Vlees</span><span class="text-xs text-slate-500 italic">Zurna Et</span></div>
+<span class="font-bold text-primary">€14</span>
+</div>
+<div class="flex justify-between items-center p-4">
+<div class="flex flex-col"><span class="font-semibold">Zurna Mix</span><span class="text-xs text-slate-500 italic">Zurna Karışık</span></div>
+<span class="font-bold text-primary">€14</span>
+</div>
+</div>
+</section>
+<section class="flex flex-col" id="durum">
+<h2 class="text-xl font-bold px-2 mb-4 border-l-4 border-primary flex items-center gap-2 uppercase">
+                        Dürüm
+                    </h2>
+<div class="flex flex-col gap-1 bg-white dark:bg-[#2a2516] rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800">
+<div class="flex justify-between items-center p-4 border-b border-slate-100 dark:border-slate-800">
+<div class="flex flex-col"><span class="font-semibold">Kip</span><span class="text-xs text-slate-500 italic">Tavuk</span></div>
+<span class="font-bold text-primary">€9</span>
+</div>
+<div class="flex justify-between items-center p-4 border-b border-slate-100 dark:border-slate-800">
+<div class="flex flex-col"><span class="font-semibold">Vlees</span><span class="text-xs text-slate-500 italic">Et</span></div>
+<span class="font-bold text-primary">€10</span>
+</div>
+<div class="flex justify-between items-center p-4">
+<div class="flex flex-col"><span class="font-semibold">Mix</span><span class="text-xs text-slate-500 italic">Karışık</span></div>
+<span class="font-bold text-primary">€10</span>
+</div>
+</div>
+</section>
+<section class="flex flex-col" id="pitta">
+<h2 class="text-xl font-bold px-2 mb-4 border-l-4 border-primary flex items-center gap-2 uppercase">
+                        Pitta <span class="text-xs font-normal opacity-50 lowercase ml-1">(Klein / Groot)</span>
+</h2>
+<div class="flex flex-col gap-1 bg-white dark:bg-[#2a2516] rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800">
+<div class="flex justify-between items-center p-4 border-b border-slate-100 dark:border-slate-800">
+<div class="flex flex-col"><span class="font-semibold">Kip</span><span class="text-xs text-slate-500 italic">Tavuk</span></div>
+<span class="font-bold text-primary">€9 / 12</span>
+</div>
+<div class="flex justify-between items-center p-4 border-b border-slate-100 dark:border-slate-800">
+<div class="flex flex-col"><span class="font-semibold">Vlees</span><span class="text-xs text-slate-500 italic">Et</span></div>
+<span class="font-bold text-primary">€10 / 13</span>
+</div>
+<div class="flex justify-between items-center p-4">
+<div class="flex flex-col"><span class="font-semibold">Mix</span><span class="text-xs text-slate-500 italic">Karışık</span></div>
+<span class="font-bold text-primary">€10 / 13</span>
+</div>
+</div>
+</section>
+<section class="flex flex-col" id="schotels">
+<h2 class="text-xl font-bold px-2 mb-4 border-l-4 border-primary flex items-center gap-2 uppercase">
+                        Schotels <span class="text-xs font-medium text-slate-400">/ Tabak</span>
+</h2>
+<div class="flex flex-col gap-1 bg-white dark:bg-[#2a2516] rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800">
+<div class="flex justify-between items-center p-4 border-b border-slate-100 dark:border-slate-800">
+<div class="flex flex-col"><span class="font-semibold">Kip</span><span class="text-xs text-slate-500 italic">Tavuk</span></div>
 <span class="font-bold text-primary">€15</span>
+</div>
+<div class="flex justify-between items-center p-4 border-b border-slate-100 dark:border-slate-800">
+<div class="flex flex-col"><span class="font-semibold">Vlees</span><span class="text-xs text-slate-500 italic">Et</span></div>
+<span class="font-bold text-primary">€16</span>
 </div>
 <div class="flex justify-between items-center p-4 border-b border-slate-100 dark:border-slate-800">
 <div class="flex flex-col"><span class="font-semibold">Mix</span><span class="text-xs text-slate-500 italic">Karışık</span></div>
 <span class="font-bold text-primary">€16</span>
 </div>
 <div class="flex justify-between items-center p-4 border-b border-slate-100 dark:border-slate-800">
-<div class="flex flex-col">
-<span class="font-semibold">Rijst &amp; Kip</span>
-<span class="text-xs text-slate-500 italic">Pirinç &amp; Tavuk</span>
-</div>
-<span class="font-bold text-primary">€13</span>
+<div class="flex flex-col"><span class="font-semibold">Köfte</span><span class="text-xs text-slate-500 italic">Izgara Köfte</span></div>
+<span class="font-bold text-primary">€15</span>
 </div>
 <div class="flex justify-between items-center p-4">
-<div class="flex flex-col">
-<span class="font-semibold">Rijst &amp; Vlees</span>
-<span class="text-xs text-slate-500 italic">Pirinç &amp; Et</span>
-</div>
-<span class="font-bold text-primary">€14</span>
+<div class="flex flex-col"><span class="font-semibold">Kipfilet</span><span class="text-xs text-slate-500 italic">Tavuk Fileto</span></div>
+<span class="font-bold text-primary">€16</span>
 </div>
 </div>
 </section>
-<!-- Category: KAPSALON -->
 <section class="flex flex-col" id="kapsalon">
-<h2 class="text-xl font-bold px-2 mb-4 border-l-4 border-primary flex items-center gap-2">
-                        KAPSALON
+<h2 class="text-xl font-bold px-2 mb-4 border-l-4 border-primary flex items-center gap-2 uppercase">
+                        Kapsalons
                     </h2>
 <div class="flex flex-col gap-1 bg-white dark:bg-[#2a2516] rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800">
 <div class="flex justify-between items-center p-4 border-b border-slate-100 dark:border-slate-800">
@@ -203,67 +189,69 @@
 </div>
 <div class="flex justify-between items-center p-4">
 <div class="flex flex-col"><span class="font-semibold">Mix</span><span class="text-xs text-slate-500 italic">Karışık</span></div>
-<span class="font-bold text-primary">€16</span>
+<span class="font-bold text-primary">€15</span>
 </div>
 </div>
 </section>
-<!-- Category: VEGETARISCH -->
-<section class="flex flex-col" id="vegetarisch">
-<h2 class="text-xl font-bold px-2 mb-4 border-l-4 border-primary flex items-center gap-2">
-                        VEGETARISCH
-                        <span class="text-xs font-medium text-slate-400">/ VEJETARYEN</span>
-</h2>
-<div class="p-4 bg-primary/5 rounded-xl border border-primary/20 mb-4">
-<p class="text-xs text-slate-600 dark:text-slate-300">
-                            Hummus, kikkererwten, linzen &amp; ui. <br/>
-<span class="italic text-slate-400">Humus, nohut, mercimek &amp; soğan.</span>
-</p>
-</div>
-<div class="flex flex-col gap-1 bg-white dark:bg-[#2a2516] rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<section class="flex flex-col">
+<h2 class="text-lg font-bold px-2 mb-3 border-l-4 border-primary uppercase">Franse Hamburger</h2>
+<div class="flex flex-col bg-white dark:bg-[#2a2516] rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800">
 <div class="flex justify-between items-center p-4 border-b border-slate-100 dark:border-slate-800">
-<span class="font-semibold">Dürüm</span>
+<div class="flex flex-col"><span class="font-semibold">Brood</span><span class="text-xs text-slate-500 italic">Ekmek</span></div>
+<span class="font-bold text-primary">€8</span>
+</div>
+<div class="flex justify-between items-center p-4">
+<div class="flex flex-col"><span class="font-semibold">Dürüm</span><span class="text-xs text-slate-500 italic">Dürüm</span></div>
+<span class="font-bold text-primary">€8</span>
+</div>
+</div>
+</section>
+<section class="flex flex-col">
+<h2 class="text-lg font-bold px-2 mb-3 border-l-4 border-primary uppercase">Köfte</h2>
+<div class="flex flex-col bg-white dark:bg-[#2a2516] rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800">
+<div class="flex justify-between items-center p-4 border-b border-slate-100 dark:border-slate-800">
+<div class="flex flex-col"><span class="font-semibold">Dürüm</span><span class="text-xs text-slate-500 italic">Dürüm</span></div>
+<span class="font-bold text-primary">€9</span>
+</div>
+<div class="flex justify-between items-center p-4">
+<div class="flex flex-col"><span class="font-semibold">Brood</span><span class="text-xs text-slate-500 italic">Ekmek</span></div>
+<span class="font-bold text-primary">€9</span>
+</div>
+</div>
+</section>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<section class="flex flex-col">
+<h2 class="text-lg font-bold px-2 mb-3 border-l-4 border-primary uppercase">Kipfilet</h2>
+<div class="flex flex-col bg-white dark:bg-[#2a2516] rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800">
+<div class="flex justify-between items-center p-4 border-b border-slate-100 dark:border-slate-800">
+<div class="flex flex-col"><span class="font-semibold">Klein</span><span class="text-xs text-slate-500 italic">Küçük</span></div>
 <span class="font-bold text-primary">€10</span>
 </div>
 <div class="flex justify-between items-center p-4">
-<div class="flex flex-col">
-<span class="font-semibold">Brood</span>
-<span class="text-xs text-slate-500 italic">Ekmek</span>
-</div>
-<span class="font-bold text-primary">€10</span>
-</div>
-</div>
-</section>
-<!-- Category: OTHER SECTIONS (HAMBURGER, SOEP, LAHMACUN) -->
-<div class="grid grid-cols-1 gap-6">
-<section class="flex flex-col">
-<h2 class="text-lg font-bold px-2 mb-3 border-l-4 border-primary">HAMBURGER</h2>
-<div class="flex justify-between items-center p-4 bg-white dark:bg-[#2a2516] rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
-<div class="flex flex-col"><span class="font-semibold">200gr Vlees</span><span class="text-xs text-slate-500 italic">200gr Et</span></div>
+<div class="flex flex-col"><span class="font-semibold">Groot</span><span class="text-xs text-slate-500 italic">Büyük</span></div>
 <span class="font-bold text-primary">€12</span>
 </div>
-</section>
-<section class="flex flex-col">
-<h2 class="text-lg font-bold px-2 mb-3 border-l-4 border-primary">SOEP <span class="text-xs font-normal opacity-50">/ ÇORBA</span></h2>
-<div class="flex justify-between items-center p-4 bg-white dark:bg-[#2a2516] rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
-<div class="flex flex-col"><span class="font-semibold">Kippensoep</span><span class="text-xs text-slate-500 italic">Tavuk Suyu Çorbası</span></div>
-<span class="font-bold text-primary">€8</span>
 </div>
 </section>
 <section class="flex flex-col">
-<h2 class="text-lg font-bold px-2 mb-3 border-l-4 border-primary">LAHMACUN</h2>
-<div class="flex justify-between items-center p-4 bg-white dark:bg-[#2a2516] rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
-<span class="font-semibold">Lahmacun</span>
-<span class="font-bold text-primary">€5</span>
+<h2 class="text-lg font-bold px-2 mb-3 border-l-4 border-primary uppercase">Vegetarisch <span class="text-xs font-medium text-slate-400">/ Vejetaryen</span></h2>
+<div class="flex justify-between items-center p-4 bg-white dark:bg-[#2a2516] rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm h-full">
+<div class="flex flex-col"><span class="font-semibold">Falafel</span><span class="text-xs text-slate-500 italic">Falafel</span></div>
+<span class="font-bold text-primary">€9</span>
 </div>
 </section>
 </div>
-<!-- Category: DESSERTS & SIDES -->
 <div class="grid grid-cols-1 gap-8">
 <section>
-<h2 class="text-xl font-bold px-2 mb-4 border-l-4 border-primary">DESSERTS <span class="text-xs font-normal opacity-50">/ TATLILAR</span></h2>
+<h2 class="text-xl font-bold px-2 mb-4 border-l-4 border-primary uppercase">Desserts <span class="text-xs font-normal opacity-50">/ Tatlılar</span></h2>
 <div class="flex flex-col gap-1 bg-white dark:bg-[#2a2516] rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800">
 <div class="flex justify-between items-center p-4 border-b border-slate-100 dark:border-slate-800">
+<div class="flex flex-col">
 <span class="font-semibold">Künefe</span>
+<span class="text-xs text-slate-500 italic">Künefe</span>
+</div>
 <span class="font-bold text-primary">€8</span>
 </div>
 <div class="flex justify-between items-center p-4">
@@ -276,7 +264,24 @@
 </div>
 </section>
 <section>
-<h2 class="text-xl font-bold px-2 mb-4 border-l-4 border-primary">FRIETEN <span class="text-xs font-normal opacity-50">/ PATATES</span></h2>
+<h2 class="text-xl font-bold px-2 mb-4 border-l-4 border-primary uppercase">Dranken <span class="text-xs font-normal opacity-50">/ İçecekler</span></h2>
+<div class="flex flex-col gap-1 bg-white dark:bg-[#2a2516] rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800">
+<div class="flex justify-between items-center p-4 border-b border-slate-100 dark:border-slate-800">
+<div class="flex flex-col"><span class="font-semibold">Alle dranken</span><span class="text-xs text-slate-500 italic">Tüm içecekler</span></div>
+<span class="font-bold text-primary">€2</span>
+</div>
+<div class="flex justify-between items-center p-4">
+<div class="flex flex-col">
+<span class="font-semibold text-red-500">Redbull</span>
+<span class="text-xs text-slate-500 italic">Redbull</span>
+</div>
+<span class="font-bold text-primary">€3</span>
+</div>
+</div>
+</section>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<section>
+<h2 class="text-xl font-bold px-2 mb-4 border-l-4 border-primary uppercase">Frieten <span class="text-xs font-normal opacity-50">/ Patates</span></h2>
 <div class="flex flex-col gap-1 bg-white dark:bg-[#2a2516] rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800">
 <div class="flex justify-between items-center p-4 border-b border-slate-100 dark:border-slate-800">
 <div class="flex flex-col"><span class="font-semibold">Klein</span><span class="text-xs text-slate-500 italic">Küçük</span></div>
@@ -289,7 +294,21 @@
 </div>
 </section>
 <section>
-<h2 class="text-xl font-bold px-2 mb-4 border-l-4 border-primary">SAUS <span class="text-xs font-normal opacity-50">/ SOS</span></h2>
+<h2 class="text-xl font-bold px-2 mb-4 border-l-4 border-primary uppercase">Extra</h2>
+<div class="flex flex-col gap-1 bg-white dark:bg-[#2a2516] rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800">
+<div class="flex justify-between items-center p-4 border-b border-slate-100 dark:border-slate-800">
+<div class="flex flex-col"><span class="font-semibold">Vlees</span><span class="text-xs text-slate-500 italic">Ekstra Et</span></div>
+<span class="font-bold text-primary">€2</span>
+</div>
+<div class="flex justify-between items-center p-4">
+<div class="flex flex-col"><span class="font-semibold">Fetakaas</span><span class="text-xs text-slate-500 italic">Feta Peyniri</span></div>
+<span class="font-bold text-primary">€2</span>
+</div>
+</div>
+</section>
+</div>
+<section>
+<h2 class="text-xl font-bold px-2 mb-4 border-l-4 border-primary uppercase">Sauzen <span class="text-xs font-normal opacity-50">/ Soslar</span></h2>
 <div class="flex justify-between items-center p-4 bg-white dark:bg-[#2a2516] rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
 <div class="flex flex-col"><span class="font-semibold">Alle sauzen</span><span class="text-xs text-slate-500 italic">Tüm soslar</span></div>
 <span class="font-bold text-primary">€0,5</span>
@@ -297,7 +316,6 @@
 </section>
 </div>
 </main>
-<!-- Footer -->
 <footer class="mt-auto bg-primary dark:bg-[#493f22] p-8 text-center text-background-dark dark:text-white">
 <div class="max-w-[400px] mx-auto flex flex-col gap-4">
 <span class="material-symbols-outlined text-4xl">restaurant</span>
@@ -315,4 +333,5 @@
 </footer>
 </div>
 </div>
+
 </body></html>
