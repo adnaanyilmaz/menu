@@ -1,231 +1,379 @@
 <!DOCTYPE html>
-<html class="dark" lang="nl"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Digital Menu | Authentic Turkish Cuisine</title>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&amp;family=Bebas+Neue&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
-<script>
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              primary: "#f59e0b", // Amber 500
-              "background-light": "#fffbeb", // Amber 50
-              "background-dark": "#0c0a09", // Stone 950
-              "accent-orange": "#fbbf24",
-            },
-            fontFamily: {
-              display: ["Bebas Neue", "sans-serif"],
-              sans: ["Outfit", "sans-serif"],
-            },
-            borderRadius: {
-              DEFAULT: "8px",
-            },
-          },
-        },
-      };
-    </script>
-<style>
-        .menu-border {
-            border: 1px solid #f59e0b;
-        }
-        .category-badge {
-            position: absolute;
-            top: -14px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: #f59e0b;
-            color: black;
-            padding: 2px 24px;
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: 1.25rem;
-            letter-spacing: 0.05em;
-            border-radius: 4px;
-            white-space: nowrap;
-        }
-        .price-dot {
-            flex-grow: 1;
-            border-bottom: 1px dotted #f59e0b;
-            margin: 0 8px;
-            margin-bottom: 5px;
-            opacity: 0.3;
-        }
-        .bg-gradient-mesh {
-            background-image: radial-gradient(at 0% 0%, rgba(245, 158, 11, 0.1) 0, transparent 50%), 
-                              radial-gradient(at 100% 100%, rgba(245, 158, 11, 0.05) 0, transparent 50%);
-        }
-    </style>
-</head>
-<body class="bg-background-light dark:bg-background-dark text-stone-900 dark:text-stone-100 font-sans transition-colors duration-300 min-h-screen selection:bg-primary selection:text-black">
-<header class="sticky top-0 z-50 bg-white/80 dark:bg-stone-950/80 backdrop-blur-md border-b border-primary/20">
-<div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary text-4xl">restaurant_menu</span>
-<h1 class="font-display text-3xl tracking-widest text-primary">ANATOLIA GRILL</h1>
-</div>
-<a class="flex items-center gap-2 bg-primary hover:bg-amber-400 text-black px-6 py-2.5 rounded-full font-semibold transition-all shadow-lg hover:shadow-primary/20 group" href="https://maps.app.goo.gl/ikCHJtqPfwkPTg126" target="_blank">
-<span class="material-symbols-outlined group-hover:animate-bounce">location_on</span>
-<span>VIND ONS OP MAPS</span>
-</a>
-</div>
-</header>
-<main class="max-w-7xl mx-auto px-4 py-12 bg-gradient-mesh">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
-<div class="lg:col-span-4 space-y-12">
-<div class="relative menu-border p-6 pt-8 rounded-sm">
-<span class="category-badge">HATAY DÜRÜM</span>
-<div class="space-y-3">
-<div class="flex justify-between items-end"><span class="font-semibold">Kip</span><div class="price-dot"></div><span class="text-primary font-bold">€ 10</span></div>
-<div class="flex justify-between items-end"><span class="font-semibold">Vlees</span><div class="price-dot"></div><span class="text-primary font-bold">€ 11</span></div>
-<div class="flex justify-between items-end"><span class="font-semibold">Mix</span><div class="price-dot"></div><span class="text-primary font-bold">€ 11</span></div>
-<div class="flex justify-between items-end"><span class="font-semibold">Zurna Kip</span><div class="price-dot"></div><span class="text-primary font-bold">€ 13</span></div>
-<div class="flex justify-between items-end"><span class="font-semibold">Zurna Vlees</span><div class="price-dot"></div><span class="text-primary font-bold">€ 14</span></div>
-<div class="flex justify-between items-end"><span class="font-semibold">Zurna Mix</span><div class="price-dot"></div><span class="text-primary font-bold">€ 14</span></div>
-</div>
-</div>
-<div class="relative menu-border p-6 pt-8 rounded-sm">
-<span class="category-badge">DÜRÜM</span>
-<div class="space-y-3">
-<div class="flex justify-between items-end"><span>Kip</span><div class="price-dot"></div><span class="text-primary font-bold">€ 9</span></div>
-<div class="flex justify-between items-end"><span>Vlees</span><div class="price-dot"></div><span class="text-primary font-bold">€ 10</span></div>
-<div class="flex justify-between items-end"><span>Mix</span><div class="price-dot"></div><span class="text-primary font-bold">€ 10</span></div>
-</div>
-</div>
-</div>
-<div class="lg:col-span-4 flex flex-col items-center justify-center relative overflow-hidden rounded-2xl group border border-primary/30 shadow-2xl shadow-primary/10">
-<img alt="Delicious Turkish Durum Wrap" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUKwLzZX-wzdjjYWpgBeEVqVB_83iETFMmvml7p6enx0MIyDK5VHBFdYWRn5CiHji5UJr8_nuCN1alCHnCCc9gfVR7fjZUr2Dw9pNGRWr-k1tVR4gEtKeIirWXqcjkMYDn8NiMbLsryFtyf-4dLqYCBAS801abt8cJKPFygCsR8n2rR2OoklxKg7UuxTN0y8nUb4VX0Gidl1lASFzO9umMIWlYZfoQMuFcge3nckUS6JcAcnF9UDEjxTYc28KVrGxtBf9SWjFtoren"/>
-<div class="absolute inset-0 bg-black/40 flex items-center justify-center">
-<button class="w-16 h-16 bg-primary text-black rounded-full flex items-center justify-center pl-1 hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-4xl">play_arrow</span>
-</button>
-</div>
-<div class="absolute bottom-4 left-4 right-4 bg-black/60 backdrop-blur-md p-4 rounded-xl border border-white/10">
-<p class="text-white text-sm italic text-center">"De smaak van traditie, elke dag vers bereid."</p>
-</div>
-</div>
-<div class="lg:col-span-4 space-y-12">
-<div class="relative menu-border p-6 pt-8 rounded-sm">
-<span class="category-badge">SCHOTELS</span>
-<div class="space-y-3">
-<div class="flex justify-between items-end"><span>Kip</span><div class="price-dot"></div><span class="text-primary font-bold">€ 15</span></div>
-<div class="flex justify-between items-end"><span>Vlees</span><div class="price-dot"></div><span class="text-primary font-bold">€ 16</span></div>
-<div class="flex justify-between items-end"><span>Mix</span><div class="price-dot"></div><span class="text-primary font-bold">€ 16</span></div>
-<div class="flex justify-between items-end"><span>Köfte</span><div class="price-dot"></div><span class="text-primary font-bold">€ 15</span></div>
-<div class="flex justify-between items-end"><span>Kipfilet</span><div class="price-dot"></div><span class="text-primary font-bold">€ 16</span></div>
-</div>
-</div>
-<div class="relative menu-border p-6 pt-8 rounded-sm">
-<span class="category-badge">KAPSALONS</span>
-<div class="space-y-3">
-<div class="flex justify-between items-end"><span>Kip</span><div class="price-dot"></div><span class="text-primary font-bold">€ 14</span></div>
-<div class="flex justify-between items-end"><span>Vlees</span><div class="price-dot"></div><span class="text-primary font-bold">€ 15</span></div>
-<div class="flex justify-between items-end"><span>Mix</span><div class="price-dot"></div><span class="text-primary font-bold">€ 15</span></div>
-</div>
-</div>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
-<div class="relative menu-border p-6 pt-8 rounded-sm">
-<span class="category-badge">PITTA</span>
-<div class="grid grid-cols-3 gap-2 mb-2 text-xs font-bold text-primary/70">
-<div></div>
-<div class="text-right">KLEIN</div>
-<div class="text-right">GROOT</div>
-</div>
-<div class="space-y-3">
-<div class="grid grid-cols-3 gap-2 items-center">
-<span>Kip</span>
-<span class="text-right text-primary font-bold">€ 9</span>
-<span class="text-right text-primary font-bold">€ 12</span>
-</div>
-<div class="grid grid-cols-3 gap-2 items-center">
-<span>Vlees</span>
-<span class="text-right text-primary font-bold">€ 10</span>
-<span class="text-right text-primary font-bold">€ 13</span>
-</div>
-<div class="grid grid-cols-3 gap-2 items-center">
-<span>Mix</span>
-<span class="text-right text-primary font-bold">€ 10</span>
-<span class="text-right text-primary font-bold">€ 13</span>
-</div>
-</div>
-</div>
-<div class="space-y-12">
-<div class="relative menu-border p-6 pt-8 rounded-sm">
-<span class="category-badge">DRANKEN</span>
-<div class="space-y-3">
-<div class="flex justify-between items-end"><span>Alle dranken</span><div class="price-dot"></div><span class="text-primary font-bold">€ 2</span></div>
-<div class="flex justify-between items-end"><span>Redbull</span><div class="price-dot"></div><span class="text-primary font-bold">€ 3</span></div>
-</div>
-</div>
-<div class="relative menu-border p-6 pt-8 rounded-sm">
-<span class="category-badge">EXTRA</span>
-<div class="space-y-3">
-<div class="flex justify-between items-end"><span>Extra Vlees</span><div class="price-dot"></div><span class="text-primary font-bold">€ 2</span></div>
-<div class="flex justify-between items-end"><span>Fetakaas</span><div class="price-dot"></div><span class="text-primary font-bold">€ 2</span></div>
-</div>
-</div>
-</div>
-<div class="relative">
-<div class="absolute -top-12 right-0 w-32 h-32 z-10 hidden lg:block">
-<img alt="Crispy Fries" class="rounded-full border-4 border-primary shadow-xl rotate-12" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP4tCahgqOKfo3WHW19uL-YOuM8GI3LxR-esDC3t9LzpQVtR1jir7qjS3H5Udky-yalt-CJVchvq2SWpSzYKCGkNjeg2tPMhCoLVzO5qZpFI3tbDGQtLw4bAVQDqTBOk4c0kd9lSDFpCrzMqH3sg-3NRGhGgvMc2-u3c4r5lwxb3FfStZM8hWrbG3jep0MUvMVD_GeEc8zZpH_hLk9jR6WimoGwD_KlxjIm1NzIoY1fIvstr6zzF4kzoUb-ar8hKRCgMDckavRsoPk"/>
-</div>
-<div class="relative menu-border p-6 pt-8 rounded-sm h-full flex flex-col justify-center">
-<span class="category-badge">FRIETEN</span>
-<div class="space-y-4">
-<div class="flex justify-between items-end text-lg"><span>Klein</span><div class="price-dot"></div><span class="text-primary font-bold">€ 3,50</span></div>
-<div class="flex justify-between items-end text-lg"><span>Groot</span><div class="price-dot"></div><span class="text-primary font-bold">€ 4,50</span></div>
-</div>
-<div class="mt-8 relative menu-border border-dashed p-4 pt-6 rounded-sm">
-<span class="category-badge !text-sm !top-[-10px]">SAUZEN</span>
-<div class="flex justify-between items-end"><span>Alle sauzen</span><div class="price-dot"></div><span class="text-primary font-bold">€ 0,50</span></div>
-</div>
-</div>
-</div>
-</div>
-<div class="mt-20 relative p-8 border border-primary/40 rounded-sm bg-primary/5 text-center">
-<div class="absolute -top-3 left-1/2 -translate-x-1/2 px-4 bg-background-light dark:bg-background-dark">
-<span class="material-symbols-outlined text-primary">verified</span>
-</div>
-<p class="text-lg md:text-xl font-medium mb-4 dark:text-amber-200">
-                Bütün ürünlerimiz günlük <span class="text-primary font-bold underline decoration-wavy underline-offset-4">taze hazırlanıyor</span>.
-            </p>
-<p class="text-stone-600 dark:text-stone-400 max-w-2xl mx-auto leading-relaxed">
-                Onze gerechten worden met de hand bereid, volgens <span class="text-primary font-semibold">authentieke en huisgemaakte</span> recepten.
-            </p>
-</div>
-</main>
-<footer class="py-12 border-t border-primary/10">
-<div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
-<div class="text-center md:text-left">
-<p class="font-display text-xl tracking-wider text-primary">ANATOLIA GRILL</p>
-<p class="text-sm text-stone-500">© 2024 Alle rechten voorbehouden.</p>
-</div>
-<div class="flex gap-6">
-<a class="w-10 h-10 rounded-full bg-stone-100 dark:bg-stone-900 flex items-center justify-center hover:bg-primary hover:text-black transition-all" href="#">
-<span class="material-symbols-outlined text-xl">language</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-stone-100 dark:bg-stone-900 flex items-center justify-center hover:bg-primary hover:text-black transition-all" href="#">
-<span class="material-symbols-outlined text-xl">share</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-stone-100 dark:bg-stone-900 flex items-center justify-center hover:bg-primary hover:text-black transition-all" href="#">
-<span class="material-symbols-outlined text-xl">phone</span>
-</a>
-</div>
-</div>
-</footer>
-<script>
-        // Check for saved dark mode preference
-        if (localStorage.getItem('color-theme') === 'light' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)').matches)) {
-            document.documentElement.classList.remove('dark')
-        } else {
-            document.documentElement.classList.add('dark')
-        }
-    </script>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HATAY DÖNER KEBAB | Digital Menu</title>
 
-</body></html>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Bebas+Neue&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: "#f59e0b",          // amber-500
+            brand2: "#fb923c",         // orange-400
+            ink: "#0c0a09",            // stone-950
+            paper: "#fffbeb"           // amber-50
+          },
+          fontFamily: {
+            display: ["Bebas Neue", "sans-serif"],
+            sans: ["Outfit", "sans-serif"]
+          },
+          boxShadow: {
+            glow: "0 12px 40px rgba(245, 158, 11, .18)"
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    .mesh {
+      background:
+        radial-gradient(1000px 400px at 10% 0%, rgba(245,158,11,.18), transparent 60%),
+        radial-gradient(900px 420px at 95% 20%, rgba(251,146,60,.12), transparent 55%),
+        radial-gradient(700px 360px at 40% 90%, rgba(245,158,11,.10), transparent 60%),
+        linear-gradient(180deg, rgba(255,251,235,1), rgba(255,255,255,1));
+    }
+    .card-border {
+      border: 1px solid rgba(245, 158, 11, .45);
+    }
+    .badge {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 4px 18px;
+      border-radius: 999px;
+      background: #f59e0b;
+      color: #0c0a09;
+      font-family: "Bebas Neue", sans-serif;
+      letter-spacing: .08em;
+      font-size: 1.1rem;
+      white-space: nowrap;
+      box-shadow: 0 10px 30px rgba(245, 158, 11, .25);
+    }
+    .dots {
+      flex: 1;
+      border-bottom: 1px dotted rgba(245, 158, 11, .9);
+      opacity: .45;
+      margin: 0 10px;
+      transform: translateY(-3px);
+    }
+    .pill {
+      border: 1px solid rgba(245, 158, 11, .35);
+      background: rgba(245,158,11,.08);
+    }
+  </style>
+</head>
+
+<body class="font-sans text-stone-900">
+  <!-- Top bar -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-amber-200">
+    <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-amber-100 card-border flex items-center justify-center shadow-glow">
+          <span class="text-2xl">🥙</span>
+        </div>
+        <div class="leading-tight">
+          <h1 class="font-display text-3xl tracking-widest text-amber-600">HATAY DÖNER KEBAB</h1>
+          <p class="text-xs text-stone-500 -mt-1">GENT • BELÇİKA • 12:00–00:00</p>
+        </div>
+      </div>
+
+      <div class="hidden sm:flex items-center gap-2">
+        <a
+          href="https://maps.app.goo.gl/ikCHJtqPfwkPTg126"
+          target="_blank"
+          class="px-5 py-2.5 rounded-full bg-amber-500 hover:bg-amber-400 text-stone-950 font-semibold shadow-glow transition"
+        >
+          📍 Konuma Git
+        </a>
+        <a
+          href="tel:+32487214401"
+          class="px-5 py-2.5 rounded-full pill hover:bg-amber-100 text-stone-900 font-semibold transition"
+          title="Ara"
+        >
+          📞 Ara
+        </a>
+        <a
+          href="https://wa.me/32487214401"
+          target="_blank"
+          class="px-5 py-2.5 rounded-full pill hover:bg-amber-100 text-stone-900 font-semibold transition"
+          title="WhatsApp"
+        >
+          💬 WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="mesh">
+    <div class="max-w-6xl mx-auto px-4 py-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+        <div class="lg:col-span-7">
+          <div class="p-7 rounded-3xl bg-white card-border shadow-glow">
+            <p class="inline-flex items-center gap-2 text-xs font-bold px-3 py-1 rounded-full bg-amber-50 border border-amber-200">
+              ⭐ Authentic Turkish Cuisine • Günlük taze
+            </p>
+            <h2 class="mt-4 font-display text-5xl tracking-wider text-stone-950">
+              Digital Menu
+            </h2>
+            <p class="mt-2 text-stone-600 leading-relaxed">
+              Hatay lezzetleri • Dürüm • Schotel • Kapsalon • Tatlılar
+            </p>
+
+            <div class="mt-6 flex flex-col sm:flex-row gap-3">
+              <a
+                href="https://maps.app.goo.gl/ikCHJtqPfwkPTg126"
+                target="_blank"
+                class="flex-1 text-center px-6 py-3 rounded-2xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-semibold shadow-glow transition"
+              >
+                📍 Yol Tarifi Al
+              </a>
+              <a
+                href="tel:+32487214401"
+                class="flex-1 text-center px-6 py-3 rounded-2xl pill hover:bg-amber-100 font-semibold transition"
+              >
+                📞 +32 487 21 44 01
+              </a>
+              <a
+                href="https://wa.me/32487214401"
+                target="_blank"
+                class="flex-1 text-center px-6 py-3 rounded-2xl pill hover:bg-amber-100 font-semibold transition"
+              >
+                💬 WhatsApp
+              </a>
+            </div>
+
+            <div class="mt-6 text-xs text-stone-500">
+              Adres: <span class="font-semibold text-stone-700">GENT / BELÇİKA</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="rounded-3xl overflow-hidden card-border shadow-glow bg-stone-950 relative min-h-[260px]">
+            <img
+              src="https://images.unsplash.com/photo-1604909053271-2b52d8a3f5d6?auto=format&fit=crop&w=1400&q=80"
+              alt="Döner Kebab"
+              class="absolute inset-0 w-full h-full object-cover opacity-80"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-stone-950/20 to-transparent"></div>
+            <div class="relative p-7 h-full flex flex-col justify-end">
+              <p class="text-white/90 text-sm italic">
+                “De smaak van traditie, elke dag vers bereid.”
+              </p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <span class="text-xs px-3 py-1 rounded-full bg-white/10 text-white border border-white/15">🥙 Dürüm</span>
+                <span class="text-xs px-3 py-1 rounded-full bg-white/10 text-white border border-white/15">🍽️ Schotel</span>
+                <span class="text-xs px-3 py-1 rounded-full bg-white/10 text-white border border-white/15">🍟 Frieten</span>
+                <span class="text-xs px-3 py-1 rounded-full bg-white/10 text-white border border-white/15">🍯 Künefe</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu grid -->
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-10">
+        <!-- DÜRÜM -->
+        <div class="relative bg-white rounded-3xl p-6 pt-10 card-border shadow-sm">
+          <span class="badge">DÜRÜM</span>
+          <div class="space-y-3">
+            <div class="flex items-end">
+              <span class="font-semibold">Hatay Dürüm Kip</span><span class="dots"></span><span class="font-extrabold text-amber-600">€ 10</span>
+            </div>
+            <div class="flex items-end">
+              <span class="font-semibold">Hatay Dürüm Vlees</span><span class="dots"></span><span class="font-extrabold text-amber-600">€ 11</span>
+            </div>
+            <div class="flex items-end">
+              <span class="font-semibold">Dürüm Kip</span><span class="dots"></span><span class="font-extrabold text-amber-600">€ 9</span>
+            </div>
+            <div class="flex items-end">
+              <span class="font-semibold">Dürüm Vlees</span><span class="dots"></span><span class="font-extrabold text-amber-600">€ 10</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- BROOD -->
+        <div class="relative bg-white rounded-3xl p-6 pt-10 card-border shadow-sm">
+          <span class="badge">BROOD</span>
+          <div class="space-y-3">
+            <div class="flex items-end">
+              <span class="font-semibold">Kebab Kip</span><span class="dots"></span><span class="font-extrabold text-amber-600">€ 9</span>
+            </div>
+            <div class="flex items-end">
+              <span class="font-semibold">Kebab Vlees</span><span class="dots"></span><span class="font-extrabold text-amber-600">€ 10</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SCHOTEL -->
+        <div class="relative bg-white rounded-3xl p-6 pt-10 card-border shadow-sm">
+          <span class="badge">SCHOTEL</span>
+          <div class="space-y-3">
+            <div class="flex items-end">
+              <span class="font-semibold">Iskender</span><span class="dots"></span><span class="font-extrabold text-amber-600">€ 20</span>
+            </div>
+            <div class="flex items-end">
+              <span class="font-semibold">Kip</span><span class="dots"></span><span class="font-extrabold text-amber-600">€ 14</span>
+            </div>
+            <div class="flex items-end">
+              <span class="font-semibold">Vlees</span><span class="dots"></span><span class="font-extrabold text-amber-600">€ 15</span>
+            </div>
+            <div class="flex items-end">
+              <span class="font-semibold">Mix</span><span class="dots"></span><span class="font-extrabold text-amber-600">€ 16</span>
+            </div>
+            <div class="flex items-end">
+              <span class="font-semibold">Rijst & Kip</span><span class="dots"></span><span class="font-extrabold text-amber-600">€ 13</span>
+            </div>
+            <div class="flex items-end">
+              <span class="font-semibold">Rijst & Vlees</span><span class="dots"></span><span class="font-extrabold text-amber-600">€ 14</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- VEGETARISCH -->
+        <div class="relative bg-white rounded-3xl p-6 pt-10 card-border shadow-sm">
+          <span class="badge">VEGETARISCH</span>
+          <div class="space-y-3">
+            <div class="flex items-end">
+              <span class="font-semibold">Dürüm</span><span class="dots"></span><span class="font-extrabold text-amber-600">€ 10</span>
+            </div>
+            <div class="flex items-end">
+              <span class="font-semibold">Brood</span><span class="dots"></span><span class="font-extrabold text-amber-600">€ 10</span>
+            </div>
+            <div class="mt-4 p-4 rounded-2xl bg-amber-50 border border-amber-200 text-sm text-stone-700">
+              <div class="font-bold text-stone-900 mb-1">İçerik / Inhoud</div>
+              Hummus, kikkererwten, linzen & ui
+            </div>
+          </div>
+        </div>
+
+        <!-- KAPSALON -->
+        <div class="relative bg-white rounded-3xl p-6 pt-10 card-border shadow-sm">
+          <span class="badge">KAPSALON</span>
+          <div class="space-y-3">
+            <div class="flex items-end">
+              <span class="font-semibold">Kip</span><span class="dots"></span><span class="font-extrabold text-amber-600">€ 14</span>
+            </div>
+            <div class="flex items-end">
+              <span class="font-semibold">Vlees</span><span class="dots"></span><span class="font-extrabold text-amber-600">€ 15</span>
+            </div>
+            <div class="flex items-end">
+              <span class="font-semibold">Mix</span><span class="dots"></span><span class="font-extrabold text-amber-600">€ 16</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- HAMBURGER -->
+        <div class="relative bg-white rounded-3xl p-6 pt-10 card-border shadow-sm">
+          <span class="badge">HAMBURGER</span>
+          <div class="space-y-3">
+            <div class="flex items-end">
+              <span class="font-semibold">200gr Vlees</span><span class="dots"></span><span class="font-extrabold text-amber-600">€ 12</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SOEP -->
+        <div class="relative bg-white rounded-3xl p-6 pt-10 card-border shadow-sm">
+          <span class="badge">SOEP</span>
+          <div class="space-y-3">
+            <div class="flex items-end">
+              <span class="font-semibold">Kippensoep</span><span class="dots"></span><span class="font-extrabold text-amber-600">€ 8</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- LAHMACUN -->
+        <div class="relative bg-white rounded-3xl p-6 pt-10 card-border shadow-sm">
+          <span class="badge">LAHMACUN</span>
+          <div class="space-y-3">
+            <div class="flex items-end">
+              <span class="font-semibold">Lahmacun</span><span class="dots"></span><span class="font-extrabold text-amber-600">€ 5</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SAUS -->
+        <div class="relative bg-white rounded-3xl p-6 pt-10 card-border shadow-sm">
+          <span class="badge">SAUS</span>
+          <div class="space-y-3">
+            <div class="flex items-end">
+              <span class="font-semibold">Alle sauzen</span><span class="dots"></span><span class="font-extrabold text-amber-600">€ 1</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- DESSERTS -->
+        <div class="relative bg-white rounded-3xl p-6 pt-10 card-border shadow-sm">
+          <span class="badge">DESSERTS</span>
+          <div class="space-y-3">
+            <div class="flex items-end">
+              <span class="font-semibold">Künefe</span><span class="dots"></span><span class="font-extrabold text-amber-600">€ 8</span>
+            </div>
+            <div class="flex items-end">
+              <span class="font-semibold">Künefe met ijs</span><span class="dots"></span><span class="font-extrabold text-amber-600">€ 10</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- FRIETEN -->
+        <div class="relative bg-white rounded-3xl p-6 pt-10 card-border shadow-sm">
+          <span class="badge">FRIETEN</span>
+          <div class="space-y-3">
+            <div class="flex items-end">
+              <span class="font-semibold">Klein</span><span class="dots"></span><span class="font-extrabold text-amber-600">€ 3,50</span>
+            </div>
+            <div class="flex items-end">
+              <span class="font-semibold">Groot</span><span class="dots"></span><span class="font-extrabold text-amber-600">€ 4,50</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom full-width message (as you requested) -->
+      <div class="mt-4 -mx-4">
+        <div class="w-full bg-stone-950 text-amber-100 border-t border-amber-500/30">
+          <div class="max-w-6xl mx-auto px-4 py-7 text-center">
+            <p class="text-base md:text-lg leading-relaxed">
+              <span class="font-semibold text-amber-200">
+                Onze gerechten worden met de hand bereid, volgens authentieke en huisgemaakte recepten.
+              </span>
+              <span class="mx-2 text-amber-500/60">•</span>
+              <span class="font-semibold text-amber-200">
+                Bütün ürünlerimiz günlük taze hazırlanıyor.
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="py-10">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-stone-600">
+          <div class="text-center md:text-left">
+            <div class="font-display text-2xl tracking-wider text-amber-600">HATAY DÖNER KEBAB</div>
+            <div>GENT / BELÇİKA • 12:00–00:00</div>
+          </div>
+          <div class="flex gap-2">
+            <a class="px-4 py-2 rounded-full pill hover:bg-amber-100 transition" target="_blank" href="https://maps.app.goo.gl/ikCHJtqPfwkPTg126">📍 Maps</a>
+            <a class="px-4 py-2 rounded-full pill hover:bg-amber-100 transition" href="tel:+32487214401">📞 Ara</a>
+            <a class="px-4 py-2 rounded-full pill hover:bg-amber-100 transition" target="_blank" href="https://wa.me/32487214401">💬 WhatsApp</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </section>
+</body>
+</html>
